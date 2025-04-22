@@ -1,0 +1,183 @@
+/* Global styles */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #3C7748;
+
+}
+
+/* Navigation bar */
+/* Navigation bar */
+.main-nav {
+    background-color: #3C7748;
+    padding: 20px;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+body {
+    padding-top: 180px; /* Adjusted to account for header and nav */
+}
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to next line if needed */
+    justify-content: center; /* Center the items */
+    gap: 10px; /* Space between items */
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    white-space: nowrap;
+}
+
+
+
+/* Adjust the top margin of your content to account for fixed header and nav */
+.section-container {
+   
+    padding: 10px 20px; /* Top padding accounts for fixed elements */
+    scroll-margin-top: 100px; /* This ensures proper scrolling position */
+}
+
+.section-container h2 {
+    color: #3C7748;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3C7748;
+    padding-bottom: 5px;
+}
+
+/* Table styling for Manakish and Pizza */
+table {
+    width: 100%;
+    border-collapse: collapse;
+ 
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3C7748;
+    color: #ffffff;
+}
+
+td {
+    font-size: 1em;
+    color: #000000;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Menu item block (used for Mouaajaneet, Add-ons, Drinks) */
+.menu-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #3C7748;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item span {
+    font-size: 1.1em;
+}
+
+.menu-item .item-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.menu-item .item-price {
+    color: #3C7748;
+    font-weight: bold;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    background-color: #3C7748;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #7ade8e;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .nav-top ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item .item-price {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
